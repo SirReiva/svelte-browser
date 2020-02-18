@@ -1,0 +1,38 @@
+{
+  "productName": "svelte-electron",
+  "directories": {
+    "output": "release/"
+  },
+    "files": [
+        "**/*",
+        "!**/*.ts",
+        "!*.code-workspace",
+        "!LICENSE.md",
+        "!package.json",
+        "!package-lock.json",
+        "!src/",
+        "!rollup.config.js",
+        "!_config.yml",
+        "!karma.conf.js",
+        "!tsconfig.json",
+        "!tslint.json"
+    ],
+  "win": {
+    "icon": "public",
+    "target": [
+      "portable"
+    ]
+  },
+  "mac": {
+    "icon": "public",
+    "target": [
+      "dmg"
+    ]
+  },
+  "linux": {
+    "icon": "public",
+    "target": [
+      "AppImage"
+    ]
+  }
+}

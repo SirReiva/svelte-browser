@@ -1,0 +1,59 @@
+{
+  "name": "svelte-electron",
+  "version": "7.0.0",
+  "description": "Angular 9 with Electron (Typescript + SASS + Hot Reload)",
+  "homepage": "https://github.com/maximegris/angular-electron",
+  "author": {
+    "name": "Maxime GRIS",
+    "email": "maxime.gris@gmail.com"
+  },
+  "keywords": [
+    "angular",
+    "angular 8",
+    "electron",
+    "typescript",
+    "eslint",
+    "spectron",
+    "sass"
+  ],
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "postinstall": "electron-builder install-app-deps",
+    "autobuild": "rollup -c -w",
+    "start:dev": "sirv public --dev",
+    "dev": "run-p start:dev autobuild",
+    "start": "run-p electron:serve start:dev autobuild",
+    "electron:serve-tsc": "tsc -p tsconfig-serve.json",
+    "electron:serve": "wait-on http-get://localhost:5000/ && npm run electron:serve-tsc && electron . --serve",
+    "electron:local": "npm run build:prod && electron .",
+    "electron:linux": "npm run build:prod && electron-builder build --linux",
+    "electron:windows": "npm run build:prod && electron-builder build --windows",
+    "electron:mac": "npm run build:prod && electron-builder build --mac"
+  },
+  "devDependencies": {
+    "rollup": "^1.10.1",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^4.0.4",
+    "sirv-cli": "^0.4.0",
+    "svelte": "^3.0.0",
+    "@types/node": "12.11.1",
+    "electron": "8.0.0",
+    "electron-builder": "22.3.2",
+    "electron-reload": "1.5.0",
+    "npm-run-all": "4.1.5",
+    "ts-node": "8.3.0",
+    "typescript": "3.7.5",
+    "wait-on": "4.0.0",
+    "webdriver-manager": "12.1.7"
+  },
+  "engines": {
+    "node": ">=10.13.0"
+  },
+  "dependencies": {
+    "tslib": "1.10.0"
+  }
+}
