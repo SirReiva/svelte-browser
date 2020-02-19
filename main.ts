@@ -11,6 +11,8 @@ function createWindow(): BrowserWindow {
   // Create the browser window.
   win = new BrowserWindow({
     title: 'Svelte Browser',
+    transparent: true,
+    frame: false,
     webPreferences: {
       nodeIntegration: true,
       allowRunningInsecureContent: true,
@@ -39,7 +41,7 @@ function createWindow(): BrowserWindow {
     win.loadURL('http://localhost:5000');
   } else {
     win.loadURL(url.format({
-      pathname: path.join(__dirname, 'dist/index.html'),
+      pathname: path.join(__dirname, 'public/index.html'),
       protocol: 'file:',
       slashes: true
     }));

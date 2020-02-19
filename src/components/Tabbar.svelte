@@ -1,3 +1,29 @@
+<script>
+    import Spinner from './Spinner.svelte';
+    import TabStore from '../stores/tabs.store.js';
+    let selected = 0;
+    let tabs = [];
+    TabStore.subscribe(data => {
+        selected = data.selected;
+        tabs = data.tabs;
+    });
+
+    function createTab() {
+        TabStore.addTab('https://bing.es');
+    }
+
+    function selectTab(ev, num) {
+        console.log(ev);
+        TabStore.changeTab(num);
+    }
+
+    function closeTab(num) {
+        TabStore.removeTab(num);
+    }
+
+    function noop() { }
+
+</script>
 <style>
     .chrome-tabs-shell {
         position: relative;
@@ -6,6 +32,7 @@
         border-radius: 4px 4px 0 0;
         height: 24px;
         overflow: hidden;
+        opacity: 0.9;
     }
     .chrome-tabs-shell .chrome-shell-bottom-bar {
         position: absolute;
@@ -21,7 +48,7 @@
 
     .chrome-tabs {
         display: inline-flex;
-        width: calc(100% - 40px)
+        width: calc(100% - 40px);
     }
     .chrome-tabs * {
         -webkit-user-select: none;
@@ -195,37 +222,30 @@
         -ms-user-select: none; /* Internet Explorer/Edge */
         user-select: none;
     }
+    .spacer {
+        flex: 1 1 0;
+        margin-left: 12px;
+        height: 37px;
+        top: -12px;
+        position: relative;
+        -webkit-user-select: none;
+        -webkit-app-region: drag;
+    }
+    .topSpacer {
+        position: absolute;
+        -webkit-user-select: none;
+        -webkit-app-region: drag;
+        width: calc(100vw - 40px);
+        height: 9px;
+        left: 0px;
+        top: 0px;
+    }
 </style>
-<script>
-    import Spinner from './Spinner.svelte';
-    import TabStore from '../stores/tabs.store.js';
-    let selected = 0;
-    let tabs = [];
-    TabStore.subscribe(data => {
-        selected = data.selected;
-        tabs = data.tabs;
-    });
-
-    function createTab() {
-        TabStore.addTab('https://bing.es');
-    }
-
-    function selectTab(num) {
-        TabStore.changeTab(num);
-    }
-
-    function closeTab(num) {
-        TabStore.removeTab(num);
-    }
-
-    function noop() {}
-
-</script>
 <main class="cssmasks">
     <div class="chrome-tabs-shell" on:dblclick={createTab}>
         <div class="chrome-tabs">
             {#each tabs as tab, i (tab.id)}
-            <div class="chrome-tab" on:dblclick|stopPropagation={noop} class:chrome-tab--front={selected === i} on:click|stopPropagation={() => selectTab(i)}>
+            <div class="chrome-tab" on:dblclick|stopPropagation={noop} class:chrome-tab--front={selected === i} on:click|stopPropagation={(e) => selectTab(e, i)}>
                 <div class="chrome-tab-favicon">
                     {#if tab.icon}
                     <img alt="" src={tab.icon}/>
@@ -245,6 +265,8 @@
                 </div>
             </div>
             {/each}
+            <div class="spacer"></div>
+            <div class="topSpacer"></div>
         </div>
         <button class="chrome-tab-add" on:dblclick|stopPropagation={noop} on:click={createTab}>+</button>
         <div class="chrome-shell-bottom-bar"></div>

@@ -9,6 +9,8 @@ function createWindow() {
     // Create the browser window.
     win = new electron_1.BrowserWindow({
         title: 'Svelte Browser',
+        transparent: true,
+        frame: false,
         webPreferences: {
             nodeIntegration: true,
             allowRunningInsecureContent: true,
@@ -36,7 +38,7 @@ function createWindow() {
     }
     else {
         win.loadURL(url.format({
-            pathname: path.join(__dirname, 'dist/index.html'),
+            pathname: path.join(__dirname, 'public/index.html'),
             protocol: 'file:',
             slashes: true
         }));

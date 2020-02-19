@@ -3,34 +3,30 @@
   "directories": {
     "output": "release/"
   },
-    "files": [
-        "**/*",
-        "!**/*.ts",
-        "!*.code-workspace",
-        "!LICENSE.md",
-        "!package.json",
-        "!package-lock.json",
-        "!src/",
-        "!rollup.config.js",
-        "!_config.yml",
-        "!karma.conf.js",
-        "!tsconfig.json",
-        "!tslint.json"
-    ],
+  "files": [
+    "**/*",
+    "!main.ts",
+    "!*.code-workspace",
+    "!package.json",
+    "!package-lock.json",
+    "!tsconfig.json",
+    "!src/",
+    "!rollup.config.js"
+  ],
   "win": {
-    "icon": "public",
+    "icon": "public/favicon.ico",
     "target": [
       "portable"
     ]
   },
   "mac": {
-    "icon": "public",
+    "icon": "public/favicon.ico",
     "target": [
       "dmg"
     ]
   },
   "linux": {
-    "icon": "public",
+    "icon": "public/favicon.ico",
     "target": [
       "AppImage"
     ]

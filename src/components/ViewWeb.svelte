@@ -1,8 +1,9 @@
 <script>
     import { onMount } from 'svelte';
     import { createEventDispatcher } from 'svelte';
+    const basepath = require('electron').remote.app.getAppPath();
     const path  = require('path');
-    const p = path.join(process.cwd(), '/public/preload.js');
+    const p = path.join(basepath, '/public/preload.js');
 	const dispatch = createEventDispatcher();
     export let tabitem;
     let browserWin = null;

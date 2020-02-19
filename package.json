@@ -28,7 +28,7 @@
     "electron:serve": "wait-on http-get://localhost:5000/ && npm run electron:serve-tsc && electron . --serve",
     "electron:local": "npm run build:prod && electron .",
     "electron:linux": "npm run build:prod && electron-builder build --linux",
-    "electron:windows": "npm run build:prod && electron-builder build --windows",
+    "electron:windows": "npm run electron:serve-tsc && electron-builder build --windows",
     "electron:mac": "npm run build:prod && electron-builder build --mac"
   },
   "devDependencies": {
