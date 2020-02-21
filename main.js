@@ -11,6 +11,7 @@ function createWindow() {
         title: 'Svelte Browser',
         transparent: true,
         frame: false,
+        backgroundColor: '#fff',
         webPreferences: {
             nodeIntegration: true,
             allowRunningInsecureContent: true,

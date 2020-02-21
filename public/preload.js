@@ -65,6 +65,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 var class_hashmap = {"AD-POST": true,
+ "video-ads": true,
+ "ytp-ad-overlay-container": true,
  "ob-widget-section ob-first": true,
  "adsbygoogle": true,
  "dynamicAdvertContainer": true,

@@ -9,11 +9,10 @@
     });
 
     function createTab() {
-        TabStore.addTab('https://bing.es');
+        TabStore.addTab('https://google.es');
     }
 
     function selectTab(ev, num) {
-        console.log(ev);
         TabStore.changeTab(num);
     }
 
