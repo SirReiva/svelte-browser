@@ -27,10 +27,10 @@ function createWindow() {
         }
         c({ cancel: false, responseHeaders: d.responseHeaders });
     });
-    electron_1.session.defaultSession.webRequest.onBeforeRequest(null, function (details, callback) {
-        console.log(details.url);
-        callback({ cancel: true });
-    });
+    /*win.webContents.session.webRequest.onBeforeRequest((details, callback) => {
+      console.log(details.url);
+      callback({cancel: false});
+    });*/
     if (serve) {
         require('electron-reload')(__dirname, {
             electron: require(__dirname + "/node_modules/electron")

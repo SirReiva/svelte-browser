@@ -84,12 +84,15 @@
         position: absolute;
         width: 20px;
         height: 24px;
+        mask-size: 100%;
         -webkit-mask-size: 100%;
     }
     .chrome-tabs .chrome-tab .chrome-tab-curves .chrome-tab-curve-left, .chrome-tabs .chrome-tab .chrome-tab-curves .chrome-tab-curve-left-shadow1, .chrome-tabs .chrome-tab .chrome-tab-curves .chrome-tab-curve-left-shadow2 {
+        mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjVweCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDx0aXRsZT50YWItbGVmdDwvdGl0bGU+CiAgICA8ZGVzY3JpcHRpb24+TGVmdCBzaWRlIG9mIGEgQ2hyb21lIFRhYjwvZGVzY3JpcHRpb24+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0idGFiLWxlZnQiIGZpbGw9InJnYigyMjMsMjIzLDIyMykiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAsMjUgQzAsMjUgNi4wODMxMzcwMiwxOS40NTczOTA0IDguMDkzMjc5MTgsMTAuOTY1NTc2MiBDOC4xMTM1MTI4NywxMC44ODAwOTk0IDguOTY2NzE0MDEsNi4zMjE2Mzk4MSAxMC4zMzM4ODUzLDMuNzM4MjgxMjUgQzExLjAzMzYyNjQsMi40MTYwNzUyIDEyLjExNzUyMzYsMS4yMDY1NTk3OSAxMy40MDQ3NDkxLDAuNTgzNDk2MDk0IEMxNC41MjQwMzEsMC4wNDE3MjMxODkxIDE1LjkwOTg4ODMsMCAxNS45MDk4ODgzLDAgTDIwLDAgTDIwLDI1IEwwLDI1IFogTTAsMjUiIGlkPSJ0YWItbGVmdCI+PC9wYXRoPgogICAgPC9nPgo8L3N2Zz4=);
         -webkit-mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjVweCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDx0aXRsZT50YWItbGVmdDwvdGl0bGU+CiAgICA8ZGVzY3JpcHRpb24+TGVmdCBzaWRlIG9mIGEgQ2hyb21lIFRhYjwvZGVzY3JpcHRpb24+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0idGFiLWxlZnQiIGZpbGw9InJnYigyMjMsMjIzLDIyMykiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAsMjUgQzAsMjUgNi4wODMxMzcwMiwxOS40NTczOTA0IDguMDkzMjc5MTgsMTAuOTY1NTc2MiBDOC4xMTM1MTI4NywxMC44ODAwOTk0IDguOTY2NzE0MDEsNi4zMjE2Mzk4MSAxMC4zMzM4ODUzLDMuNzM4MjgxMjUgQzExLjAzMzYyNjQsMi40MTYwNzUyIDEyLjExNzUyMzYsMS4yMDY1NTk3OSAxMy40MDQ3NDkxLDAuNTgzNDk2MDk0IEMxNC41MjQwMzEsMC4wNDE3MjMxODkxIDE1LjkwOTg4ODMsMCAxNS45MDk4ODgzLDAgTDIwLDAgTDIwLDI1IEwwLDI1IFogTTAsMjUiIGlkPSJ0YWItbGVmdCI+PC9wYXRoPgogICAgPC9nPgo8L3N2Zz4=);
     }
     .chrome-tabs .chrome-tab .chrome-tab-curves .chrome-tab-curve-right, .chrome-tabs .chrome-tab .chrome-tab-curves .chrome-tab-curve-right-shadow1, .chrome-tabs .chrome-tab .chrome-tab-curves .chrome-tab-curve-right-shadow2 {
+        mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjVweCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDx0aXRsZT50YWItcmlnaHQ8L3RpdGxlPgogICAgPGRlc2NyaXB0aW9uPlJpZ2h0IHNpZGUgb2YgYSBDaHJvbWUgVGFiPC9kZXNjcmlwdGlvbj4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJ0YWItcmlnaHQiIGZpbGw9InJnYigyMjMsMjIzLDIyMykiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAsMjUgTDIwLDI1IEMyMCwyNSAxMy45MTY4NjMsMTkuNDU3MzkwNCAxMS45MDY3MjA4LDEwLjk2NTU3NjIgQzExLjg4NjQ4NzEsMTAuODgwMDk5NCAxMS4wMzMyODYsNi4zMjE2Mzk4MSA5LjY2NjExNDc1LDMuNzM4MjgxMjUgQzguOTY2MzczNjEsMi40MTYwNzUyIDcuODgyNDc2NDEsMS4yMDY1NTk3OSA2LjU5NTI1MDkzLDAuNTgzNDk2MDk0IEM1LjQ3NTk2OTAxLDAuMDQxNzIzMTg5MSA0LjA5MDExMTY2LDAgNC4wOTAxMTE2NiwwIEwwLDAgTDAsMjUgWiBNMCwyNSIgaWQ9InRhYi1yaWdodCI+PC9wYXRoPgogICAgPC9nPgo8L3N2Zz4=);
         -webkit-mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjVweCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDx0aXRsZT50YWItcmlnaHQ8L3RpdGxlPgogICAgPGRlc2NyaXB0aW9uPlJpZ2h0IHNpZGUgb2YgYSBDaHJvbWUgVGFiPC9kZXNjcmlwdGlvbj4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJ0YWItcmlnaHQiIGZpbGw9InJnYigyMjMsMjIzLDIyMykiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAsMjUgTDIwLDI1IEMyMCwyNSAxMy45MTY4NjMsMTkuNDU3MzkwNCAxMS45MDY3MjA4LDEwLjk2NTU3NjIgQzExLjg4NjQ4NzEsMTAuODgwMDk5NCAxMS4wMzMyODYsNi4zMjE2Mzk4MSA5LjY2NjExNDc1LDMuNzM4MjgxMjUgQzguOTY2MzczNjEsMi40MTYwNzUyIDcuODgyNDc2NDEsMS4yMDY1NTk3OSA2LjU5NTI1MDkzLDAuNTgzNDk2MDk0IEM1LjQ3NTk2OTAxLDAuMDQxNzIzMTg5MSA0LjA5MDExMTY2LDAgNC4wOTAxMTE2NiwwIEwwLDAgTDAsMjUgWiBNMCwyNSIgaWQ9InRhYi1yaWdodCI+PC9wYXRoPgogICAgPC9nPgo8L3N2Zz4=);
     }
     .chrome-tabs .chrome-tab .chrome-tab-curves .chrome-tab-curve-left, .chrome-tabs .chrome-tab .chrome-tab-curves .chrome-tab-curve-right {
@@ -127,11 +130,11 @@
     .chrome-tabs .chrome-tab .chrome-tab-curves .chrome-tab-curve-right-shadow2 {
         right: -22px;
     }
-    .chrome-tabs .chrome-tab.chrome-tab-current {
+    /*.chrome-tabs .chrome-tab.chrome-tab-current {
         z-index: 999;
         background-color: #f9f9f9;
         background-image: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
-    }
+    }*/
     .chrome-tabs .chrome-tab.chrome-tab-current .chrome-tab-curves .chrome-tab-curve-left, .chrome-tabs .chrome-tab.chrome-tab-current .chrome-tab-curves .chrome-tab-curve-right {
         background-color: #f9f9f9;
         background-image: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
@@ -239,30 +242,49 @@
         left: 0px;
         top: 0px;
     }
+    .wrapper-url {
+        position: fixed;
+        width: 100vw;
+        height: 36px;
+        left: 0px;
+        z-index: 2;
+    }
+    .chrome-tab-url-bar {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #444444;
+        left: 0px;
+    }
 </style>
 <main class="cssmasks">
     <div class="chrome-tabs-shell" on:dblclick={createTab}>
         <div class="chrome-tabs">
             {#each tabs as tab, i (tab.id)}
-            <div class="chrome-tab" on:dblclick|stopPropagation={noop} class:chrome-tab--front={selected === i} on:click|stopPropagation={(e) => selectTab(e, i)}>
-                <div class="chrome-tab-favicon">
-                    {#if tab.icon}
-                    <img alt="" src={tab.icon}/>
-                    {:else}
-                    <Spinner/>
-                    {/if}
+                <div class="chrome-tab" on:dblclick|stopPropagation={noop} class:chrome-tab--front={selected === i} on:click|stopPropagation={(e) => selectTab(e, i)}>
+                    <div class="chrome-tab-favicon">
+                        {#if tab.icon}
+                            <img alt="" src={tab.icon}/>
+                        {:else}
+                            <Spinner/>
+                        {/if}
+                    </div>
+                    <div class="chrome-tab-title">{tab.title}</div>
+                    <div class="chrome-tab-close" on:click|stopPropagation={() => closeTab(i)}></div>
+                    <div class="chrome-tab-curves">
+                        <div class="chrome-tab-curve-left-shadow2"></div>
+                        <div class="chrome-tab-curve-left-shadow1"></div>
+                        <div class="chrome-tab-curve-left"></div>
+                        <div class="chrome-tab-curve-right-shadow2"></div>
+                        <div class="chrome-tab-curve-right-shadow1"></div>
+                        <div class="chrome-tab-curve-right"></div>
+                    </div>
+                    <div class="wrapper-url">
+                        <div class="chrome-tab-url-bar">
+                            <input value={tab.url} type="text"/>
+                        </div>
+                    </div>
                 </div>
-                <div class="chrome-tab-title">{tab.title}</div>
-                <div class="chrome-tab-close" on:click|stopPropagation={() => closeTab(i)}></div>
-                <div class="chrome-tab-curves">
-                    <div class="chrome-tab-curve-left-shadow2"></div>
-                    <div class="chrome-tab-curve-left-shadow1"></div>
-                    <div class="chrome-tab-curve-left"></div>
-                    <div class="chrome-tab-curve-right-shadow2"></div>
-                    <div class="chrome-tab-curve-right-shadow1"></div>
-                    <div class="chrome-tab-curve-right"></div>
-                </div>
-            </div>
             {/each}
             <div class="spacer"></div>
             <div class="topSpacer"></div>

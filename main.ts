@@ -30,10 +30,10 @@ function createWindow(): BrowserWindow {
 		}
 		c({cancel: false, responseHeaders: d.responseHeaders});
   });
-  session.defaultSession.webRequest.onBeforeRequest(null, (details, callback) => {
+  /*win.webContents.session.webRequest.onBeforeRequest((details, callback) => {
     console.log(details.url);
-    callback({cancel: true});
-  });
+    callback({cancel: false});
+  });*/
 
   if (serve) {
     require('electron-reload')(__dirname, {
