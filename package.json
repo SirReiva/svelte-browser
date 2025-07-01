@@ -53,7 +53,7 @@
         "node": ">=10.13.0"
     },
     "dependencies": {
-        "electron": "^22.3.25",
+        "electron": "^28.3.2",
         "tslib": "2.0.1"
     }
 }
